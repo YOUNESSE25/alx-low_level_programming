@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int f = 1;
-	int k = 1;
-	int l = 1;
-	int i;
+	long f = 1;
+	long k = 1;
+	long l = 1;
+	long i;
 
 	for (i = 0; i < 50; i++)
 	{
