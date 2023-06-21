@@ -14,8 +14,8 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		printf("%d, ", f);
-		k = f;
 		l = k;
+		k = f;
 		f = k + l;
 	}
 	return (0);
