@@ -36,17 +36,19 @@ void print_times_table(int n)
 				}
 				else if (t < 100 && t >= 10)
 				{
+					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((t / 10) + 48);
 					_putchar((t % 10) + 48);
-					_putchar(',');
 				}
 				else
 				{
-					_putchar(' ');
-					_putchar(t + 48);
 					_putchar(',');
+					_putchar(' ');
+					_putchar((t / 100) + 48);
+					_putchar((t % 100) / 10 + 48);
+					_putchar((t % 10) + 48);
 				}
 			}
 			_putchar('\n');
