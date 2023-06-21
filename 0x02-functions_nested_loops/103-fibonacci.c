@@ -12,7 +12,7 @@ int main(void)
 	long i;
 	long s = 0;
 
-	for (i = 0; i < 4000000; i++)
+	for (i = 0; s < 4000000; i++)
 	{
 		l = k;
 		k = f;
