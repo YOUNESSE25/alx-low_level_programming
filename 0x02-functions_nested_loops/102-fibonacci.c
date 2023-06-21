@@ -9,6 +9,7 @@ int main(void)
 	int f = 1;
 	int k = 1;
 	int l = 1;
+	int i;
 
 	for (i = 0; i < 50; i++)
 	{
