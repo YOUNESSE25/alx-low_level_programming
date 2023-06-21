@@ -18,7 +18,7 @@ int main(void)
 		k = f;
 		f = k + l;
 	}
-	printf("%ld", f);
+	printf("%ld\n", f);
 	return (0);
 
 }
