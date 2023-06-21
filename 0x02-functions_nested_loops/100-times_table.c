@@ -32,6 +32,7 @@ void print_times_table(int n)
 					else
 					{
 						_putchar(t + 48);
+						_putchar(',');
 					}
 				}
 				else if (t < 100 && t >= 10)
