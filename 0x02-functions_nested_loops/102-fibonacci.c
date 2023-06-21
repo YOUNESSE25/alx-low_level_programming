@@ -11,13 +11,15 @@ int main(void)
 	long l = 1;
 	long i;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		printf("%ld, ", f);
 		l = k;
 		k = f;
 		f = k + l;
 	}
+	printf("%ld",f);
 	return (0);
+
 }
 
