@@ -20,7 +20,6 @@ int main(void)
 			s = s + i;
 		}
 	}
-	printf("%d", s);
-	_putchar('\n');
+	printf("%d\n", s);
 	return (0);
 }
