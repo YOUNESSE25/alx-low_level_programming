@@ -23,16 +23,15 @@ void print_times_table(int n)
 				{
 					if (j != 0)
 					{
+					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(t + 48);
-					_putchar(',');
 					}
 					else
 					{
 						_putchar(t + 48);
-						_putchar(',');
 					}
 				}
 				else if (t < 100 && t >= 10)
