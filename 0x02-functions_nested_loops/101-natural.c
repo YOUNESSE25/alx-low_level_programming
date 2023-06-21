@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * natural - Nature made the natural numbers; All else is the work of women
+ * main - Entry point
  *
  * Return: return 0
  */
