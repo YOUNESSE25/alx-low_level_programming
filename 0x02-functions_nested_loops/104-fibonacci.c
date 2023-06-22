@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	long double f = 1;
-	long double k = 1;
-	long double l = 1;
-	long double i;
+	float f = 1;
+	float k = 1;
+	float l = 1;
+	float i;
 
 	for (i = 0; i < 98; i++)
 	{
-		printf("%Lf, ", f);
+		printf("%f, ", f);
 		l = k;
 		k = f;
 		f = k + l;
 	}
-	printf("%Lf\n", f);
+	printf("%f\n", f);
 	return (0);
 }
