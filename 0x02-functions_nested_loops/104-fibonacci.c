@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * main - Empty point
  *
@@ -13,13 +14,14 @@ int main(void)
 
 	for (i = 0; i < 97; i++)
 	{
-		printf(f + 48);
-		printf(" ,");
+		_putchar(f + 48);
+		_putchar(' ');
+		_putchar(',');
 		l = k;
 		k = f;
 		f = k + l;
 	}
-	printf(f + 48);
+	_putchar(f + 48);
 	printf("\n");
 	return (0);
 }
