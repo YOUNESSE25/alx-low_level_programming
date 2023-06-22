@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	long f = 1;
-	long k = 1;
-	long l = 1;
-	long i;
+	unsigned long long f = 1;
+	unsigned long long k = 1;
+	unsigned long long l = 1;
+	unsigned long long i;
 
 	for (i = 0; i < 98; i++)
 	{
