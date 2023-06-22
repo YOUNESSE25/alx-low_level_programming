@@ -11,7 +11,7 @@ int main(void)
 	unsigned long l = 1;
 	int i;
 
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 97; i++)
 	{
 		printf("%lu, ", f);
 		l = k;
