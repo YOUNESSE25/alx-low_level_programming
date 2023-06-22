@@ -13,11 +13,13 @@ int main(void)
 
 	for (i = 0; i < 97; i++)
 	{
-		printf("%lu, ", f);
+		printf(f + 48);
+		printf(" ,");
 		l = k;
 		k = f;
 		f = k + l;
 	}
-	printf("%lu\n", f);
+	printf(f + 48);
+	printf("\n");
 	return (0);
 }
