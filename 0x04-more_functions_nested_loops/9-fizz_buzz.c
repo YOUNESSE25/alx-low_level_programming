@@ -3,10 +3,6 @@
 /**
  ** main - Entry point
  *
- * fizz_buzz -  prints the numbers from 1 to 100
- * multiples of three print Fizz
- *  multiples of five print Buzz
- *
  * Return: return 0
  */
 int main(void)
