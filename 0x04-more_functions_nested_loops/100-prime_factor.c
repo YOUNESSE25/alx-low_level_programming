@@ -14,7 +14,7 @@ int main(void)
 	long int p;
 	long int n = 612852475143;
 
-		for (i = 3; i <= sqrt(n); i = i + 2)
+		for (i = 3; i <= n; i++)
 		{
 			while (n % i == 0)
 			{
