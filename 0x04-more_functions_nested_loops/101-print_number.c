@@ -22,13 +22,13 @@ void print_number(int n)
 	w = n % 10;
 	if (l > 0)
 		_putchar(l + 48);
-	if (m >= 0)
+	if (m > 0)
 		_putchar(m + 48);
-	else
+	else if (m == 0 && l != 0)
 		_putchar(48);
-	if (a >= 0)
+	if (a > 0)
 		_putchar(a + 48);
-	else
+	else if (a == 0 && (l + m) != 0)
 		_putchar(48);
 	if (w >= 0)
 		_putchar(w + 48);
