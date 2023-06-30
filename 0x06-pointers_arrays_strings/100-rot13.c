@@ -3,7 +3,7 @@
 
 /**
  * rot13 - encodes a string using rot13.
- * @str: pointer
+ * @s: pointer
  *
  * Return: *s
  */
