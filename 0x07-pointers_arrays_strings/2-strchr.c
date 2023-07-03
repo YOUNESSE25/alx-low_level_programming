@@ -6,7 +6,7 @@
  * @s: address of memory
  * @c: character
  *
- * Return: d
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {
