@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strstr -  function that locates a substring.
+ * _strstr -  function that locates a substring.
  *
  * @haystack: address of memory
  * @needle: address of memory
