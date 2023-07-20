@@ -28,11 +28,13 @@ int main(int argc, char *argv[])
 	array = (char *)main;
 	for (i = 0; i < b; i++)
 	{
-		printf("%02hhx ", array[i]);
 		if (i == b - 1)
 		{
-			printf("\n");
-			break;
+			printf("%02hhx\n", array[i]);
+		}
+		else
+		{
+			printf("%02hhx ", array[i]);
 		}
 	}
 	return (0);
