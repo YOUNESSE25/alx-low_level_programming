@@ -3,7 +3,7 @@
  * sum_listint - returns the sum of all the data (n) of a listint_t
  * @head: pointer first node
  *
- * return: sum
+ * Return: sum
  */
 int sum_listint(listint_t *head)
 {
