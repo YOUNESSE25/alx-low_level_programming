@@ -1,6 +1,7 @@
 #include"lists.h"
 
-const listint_t **nloc(const listint_t **list, size_t size, const listint_t *new);
+const listint_t **nloc(const listint_t **list, size_t size,
+		const listint_t *new);
 /**
  * print_listint_safe - prints a listint_t linked list.
  * @head: pointer
@@ -39,7 +40,8 @@ size_t print_listint_safe(const listint_t *head)
  * @new: node to add
  * Return: pointer
  */
-const listint_t **nloc(const listint_t **list, size_t size, const listint_t *new)
+const listint_t **nloc(const listint_t **list, size_t size,
+		const listint_t *new)
 {
 	const listint_t **n;
 	size_t i;
