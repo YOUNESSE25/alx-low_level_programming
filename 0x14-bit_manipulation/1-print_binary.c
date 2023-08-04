@@ -5,7 +5,7 @@
  * @p: power
  * Return: number
  */
-long int pw( int b, int p)
+long int pw(int b, int p)
 {
 	long int number;
 	int i;
