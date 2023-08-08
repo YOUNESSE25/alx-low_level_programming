@@ -22,6 +22,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	oopen = open(filename, O_RDONLY);
 	rread = read(oopen, buf, letters);
 	wwrite = write(STDOUT_FILENO, buf, rread);
+	if (oopen == -1 || rread == -1 || wwrite == -1)
+	{
+		return (0);
+	}
 	free(buf);
 	close(oopen);
 	return (wwrite);
