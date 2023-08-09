@@ -7,20 +7,20 @@
  * @f: pointer file
  * Return: pointer location
  */
-char *cree_buf(char *file)
+char *cree_buf(char *f)
 {
 	char *buf;
 
 	buf = malloc(sizeof(char) * 1024);
 	if (!buf)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f);
 		exit(99);
 	}
 	return (buf);
 }
 /**
- * close_file - close file
+ * cclose - close file
  * @file_to_close: file to close
  */
 void cclose(int file_to_close)
