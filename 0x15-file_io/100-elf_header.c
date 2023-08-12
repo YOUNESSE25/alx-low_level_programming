@@ -201,11 +201,11 @@ void print_Type(unsigned char *point_cont, unsigned int t)
 void print_Entry(unsigned char *point_cont, unsigned long int add)
 {
 	printf("  Entry point address:               ");
-		if (point_cont[EI_DATA] == ELFDATA2MSB)
-		{
-			add = ((add << 8) & 0xFF00FF00) | ((add >> 8) & 0xFF00FF);
-			add = (add << 16) | (add >> 16);
-		}
+	if (point_cont[EI_DATA] == ELFDATA2MSB)
+	{
+		add = ((add << 8) & 0xFF00FF00) | ((add >> 8) & 0xFF00FF);
+		add = (add << 16) | (add >> 16);
+	}
 	if (point_cont[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int)add);
 	else
