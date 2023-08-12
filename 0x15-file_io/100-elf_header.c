@@ -40,7 +40,7 @@ void print_Magic(unsigned char *point_cont)
 {
 	int i;
 
-	printf("Magic: ");
+	printf("Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x", point_cont[i]);
@@ -56,7 +56,7 @@ void print_Magic(unsigned char *point_cont)
  */
 void print_Class(unsigned char *point_cont)
 {
-	printf("Class: ");
+	printf("Class:                             ");
 	switch (point_cont[EI_CLASS])
 	{
 		case ELFCLASSNONE:
@@ -78,7 +78,7 @@ void print_Class(unsigned char *point_cont)
  */
 void print_Data(unsigned char *point_cont)
 {
-	printf("Data: ");
+	printf("Data:                              ");
 	switch (point_cont[EI_DATA])
 	{
 		case ELFDATANONE:
@@ -100,7 +100,7 @@ void print_Data(unsigned char *point_cont)
  */
 void print_Version(unsigned char *point_cont)
 {
-	printf("Version: %d", point_cont[EI_VERSION]);
+	printf("Version:                           %d", point_cont[EI_VERSION]);
 	switch (point_cont[EI_VERSION])
 	{
 		case EV_CURRENT:
@@ -117,7 +117,7 @@ void print_Version(unsigned char *point_cont)
  */
 void print_OSABI(unsigned char *point_cont)
 {
-	printf("OS/ABI: ");
+	printf("OS/ABI:                            ");
 	switch (point_cont[EI_OSABI])
 	{
 		case ELFOSABI_NONE:
@@ -160,7 +160,7 @@ void print_OSABI(unsigned char *point_cont)
  */
 void print_ABIvers(unsigned char *point_cont)
 {
-	printf("ABI Version: %d\n", point_cont[EI_ABIVERSION]);
+	printf("ABI Version:                       %d\n", point_cont[EI_ABIVERSION]);
 }
 /**
  * print_Type - print type
@@ -171,7 +171,7 @@ void print_Type(unsigned char *point_cont, unsigned int t)
 {
 	if (point_cont[EI_DATA] == ELFDATA2MSB)
 		t >>= 8;
-	printf("Type: ");
+	printf("Type:                              ");
 	switch (t)
 	{
 		case ET_NONE:
@@ -200,7 +200,7 @@ void print_Type(unsigned char *point_cont, unsigned int t)
  */
 void print_Entry(unsigned char *point_cont, unsigned long int add)
 {
-	printf("Entry point address: ");
+	printf("Entry point address:               ");
 		if (point_cont[EI_DATA] == ELFDATA2MSB)
 		{
 			add = ((add << 8) & 0xFF00FF00) | ((add >> 8) & 0xFF00FF);
