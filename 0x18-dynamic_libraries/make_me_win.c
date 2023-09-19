@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <string.h>
 
-int tour()
+int rond()
 {
 	static int i = -1;
 
