@@ -29,8 +29,8 @@ int exponential_search(int *array, size_t size, int value)
 /**
   * b_search - searches for a value in a sorted array
   * @array: A pointer of the array
-  * @left: starting index
-  * @right: ending index
+  * @lf: starting index
+  * @rg: ending index
   * @value: value
   *
   * Return: i or -1.

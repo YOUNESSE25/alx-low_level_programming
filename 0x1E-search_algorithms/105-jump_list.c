@@ -4,7 +4,7 @@
 /**
  * jump_list - searches for a value in a sorted list
  * of integers using the Jump search algorithm
- * @array: array input
+ * @list: pointer to the head of the list to search in
  * @size: size array
  * @value: value
  * Return: index
